@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //播放地址可以是m3u8，mp4等
-        String playerUrl = "http://rmcdn.2mdn.net/MotifFiles/html/1248596/android_1330378998288.mp4";
+        String playerUrl = "https://content.jwplatform.com/manifests/IPYHGrEj.m3u8";
         //创建一个播放mediaSource,不同的源文件mediaSource不同
         MediaSource mediaSource = buildMediaSource(Uri.parse(playerUrl), null);
         //准备
