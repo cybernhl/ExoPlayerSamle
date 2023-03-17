@@ -28,7 +28,14 @@ dependencies {
 
 
     // full exoplayer library
-    implementation 'com.google.android.exoplayer:exoplayer:r2.5.2'
+    // 2.6.0 lost DefaultTimeBar.setListener ComponentListener change onShuffleModeEnabledChanged onPlaybackParametersChanged onSeekProcessed onPositionDiscontinuity
+    // r2.5.2 can not decode encryption video
+    implementation "com.google.android.exoplayer:exoplayer:$sample_exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-core:$sample_exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$sample_exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-dash:$sample_exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-hls:$sample_exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-smoothstreaming:$sample_exoplayer_version"
     /*
     library modules
     compile 'com.google.android.exoplayer:exoplayer-core:r2.X.X'
